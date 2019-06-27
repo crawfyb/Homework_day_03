@@ -11,6 +11,7 @@ p stops.index("Linlithgow")
 
 # 5. Remove `"Livingston"` from the array using its name
 stops.delete_if {|stop| stop == "Livingston"}
+stops.delete("Livingston")
 # 6. Delete `"Cumbernauld"` from the array by index
 stops.delete_at(2)
 # 7. How many stops there are in the array?
@@ -20,6 +21,7 @@ p stops[2]
 p stops.slice(2)
 p stops [2...3] #kind of
 p stops.slice(-5)
+stops.at(2)
 # # 9. Reverse the positions of the stops in the array
 p stops.reverse
 # 10. Print out all the stops using a for loop
